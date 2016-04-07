@@ -18404,6 +18404,48 @@ HBA:9422 rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:9418 ] .
 
 
+HBP_HBA:14000 rdf:type owl:Class ;
 
-                 
-                 
+                 rdfs:label "Wernicke's region"@en ;
+
+                 nsu:synonym ""@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4133 ] .
+
+
+HBP_HBA:14001 rdf:type owl:Class ;
+
+                 rdfs:label "Primary auditory cortex"@en ;
+
+                 nsu:synonym ""@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4132 ] .
+
+
+HBP_HBA:14002 rdf:type owl:Class ;
+
+                 rdfs:label "Higher auditory cortex"@en ;
+
+                 nsu:synonym "Higher order auditory cortex"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4132 ] .
+
+
+HBP_HBA:14003 rdf:type owl:Class ;
+
+                 rdfs:label "Temporoparietal junction area"@en ;
+
+                 nsu:synonym ""@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4132] .
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4084 ] .
+
+
+HBP_HBA:14003 rdf:type owl:Class ;
+
+                 rdfs:label "Temporal insular area"@en ;
+
+                 nsu:synonym ""@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4008 ] .
