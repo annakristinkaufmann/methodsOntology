@@ -14,8 +14,7 @@
 @base <http://www.hbp.FIXME.org/hbp_data_type_ontology> .
 
 <http://www.hbp.FIXME.org/hbp_data_type_ontology> rdf:type owl:Ontology ;
-                owl:imports <http://www.hbp.FIXME.org/hbp_properties> ;
-                owl:imports <http://www.FIXME.org/nsupper> .
+                owl:imports <https://raw.githubusercontent.com/NeuroscienceKnowledgeSpace/methodsOntology/master/ttl/hbp_properties.ttl> .
 
 
 
@@ -486,7 +485,7 @@ HBP_DATT:0000036 rdf:type owl:Class ;
 
 HBP_DATT:0000037 rdf:type owl:Class ;
 
-                  rdfs:label "BigBrain Parcelation XML"@en ;
+                  rdfs:label "BigBrain Parcellation XML"@en ;
 
                   rdfs:subClassOf HBP_DATT:0000012 ;
 
@@ -654,7 +653,7 @@ HBP_DATT:0000051 rdf:type owl:Class ;
 
                   rdfs:label "application/vnd.hbp.atlas.bbic;version=0"@en ;
 
-                  nsu:definition "preferred HBP format for brain region parcelation data; needs a codebook"@en ;
+                  nsu:definition "preferred HBP format for brain region parcellation data; needs a codebook"@en ;
 
                   rdfs:subClassOf HBP_DATT:0000040 ;
 
@@ -666,7 +665,7 @@ HBP_DATT:0000052 rdf:type owl:Class ;
 
                   rdfs:label "application/vnd.juelich.atlas.xml;version=0"@en ;
 
-                  nsu:definition "BigBrain atlas parcelation; needs a codebook"@en ;
+                  nsu:definition "BigBrain atlas parcellation; needs a codebook"@en ;
 
                   rdfs:subClassOf HBP_DATT:0000040 ;
 
@@ -678,7 +677,7 @@ HBP_DATT:0000053 rdf:type owl:Class ;
 
                   rdfs:label "application/vnd.abis.atlas.xml;version=0"@en ;
 
-                  nsu:definition "Allen Brain atlas parcelation, needs a codebook"@en ;
+                  nsu:definition "Allen Brain atlas parcellation, needs a codebook"@en ;
 
                   rdfs:subClassOf HBP_DATT:0000040 ;
 
@@ -853,7 +852,7 @@ HBP_DATT:0000068 rdf:type owl:Class ;
 
 HBP_DATT:0000069 rdf:type owl:Class ;
 
-                  rdfs:label "application/vnd.hbp.model.recipe.sythesis;version=0"@en ;
+                  rdfs:label "application/vnd.hbp.model.recipe.synthesis;version=0"@en ;
 
                   nsu:definition "Bundle with the structure to run the synthesis of neurons in a pre-defined space."@en ;
 
@@ -900,3 +899,82 @@ HBP_DATT:0000073 rdf:type owl:Class ;
                   rdfs:subClassOf HBP_DATT:0000040 ;
 
                   HBP_PROP:has_file_extension ".png" .                  
+
+
+HBP_DATT:0000074 rdf:type owl:Class ;
+
+                  rdfs:label "application/cef;version=0"@en ;
+
+                  nsu:definition "cell expression format files are human-readable, tab-delimited text files that can be easily parsed and generated from any scripting language, designed to simplify the exchange and manipulation of very large-scale transcriptomics data, particularly from single-cell RNA-seq."@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".cef" .
+
+
+HBP_DATT:0000075 rdf:type owl:Class ;
+
+                  rdfs:label "application/sbml+xml;version=0"@en ;
+
+                  nsu:definition "The Systems Biology Markup Language (SBML) is a machine-readable exchange format for computational models of biological processes. Its strength is in representating phenomena at the scale of biochemical reactions but it is not limited to that."@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".xml" .
+
+
+
+HBP_DATT:0000076 rdf:type owl:Class ;
+
+                  rdfs:label "application/hoc;version=0"@en ;
+
+                  nsu:definition "Programming language of the NEURON software package"@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".hoc" .
+
+
+HBP_DATT:0000077 rdf:type owl:Class ;
+
+                  rdfs:label "application/vnd.ebri.traces.txt;version=0"@en ;
+
+                  nsu:definition "File containing electrophysiological traces; needs a codebook."@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".txt" .
+
+
+
+HBP_DATT:0000078 rdf:type owl:Class ;
+
+                  rdfs:label "image/vnd.juelich.autorad.TIFF.imagestack;version=0"@en ;
+
+                  nsu:definition "Color coded autoradiograph showing the laminar distribution of a receptor in a given cortical area of a single brain. Pial surface is at the top of the image, layer VI/white matter border is at the bottom of the image. Color scale provided to indicate density range from low to high receptor densities."@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".tiff" .
+
+
+HBP_DATT:0000079 rdf:type owl:Class ;
+
+                  rdfs:label "image/vnd.juelich.profile.TIFF.imagestack;version=0"@en ;
+
+                  nsu:definition "Course of the receptor density from the pial surface (to the left of the image, 0% on x axis) to the border between layer IV and the white matter (to the right of the image, 100% on x axis). Y axis depicts receptor density in fmol/mg protein."@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".tiff" .
+
+
+HBP_DATT:0000080 rdf:type owl:Class ;
+
+                  rdfs:label "image/vnd.juelich.multireceptor.fingerprint.TIFF.imagestack;version=0"@en ;
+
+                  nsu:definition "Polar coordinate plot showing the mean (+ SD; dashed line) densities (in fmol/mg protein) of 16 receptors."@en ;
+
+                  rdfs:subClassOf HBP_DATT:0000040 ;
+
+                  HBP_PROP:has_file_extension ".tiff" .

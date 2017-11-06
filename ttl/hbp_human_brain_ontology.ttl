@@ -13,18 +13,32 @@
 @base <http://www.hbp.FIXME.org/hbp_human_brain_ontology> .
 
 <http://www.hbp.FIXME.org/hbp_human_brain_ontology> rdf:type owl:Ontology ;
-                owl:imports <http://www.FIXME.org/nsupper> .
-
+                owl:imports <https://raw.githubusercontent.com/NeuroscienceKnowledgeSpace/methodsOntology/master/ttl/nsupper.ttl> .
 
 
 HBA:4005 rdf:type owl:Class ;
 
+<<<<<<< HEAD
+HBA:4005 rdf:type owl:Class ;
+
                  rdfs:label "brain"@en ;
+=======
+                 rdfs:label "brain"@en ;
+
+                 nsu:synonym "Br"@en .
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
 
                  nsu:synonym "Br"@en .
 
 
+<<<<<<< HEAD
 
+HBA:4006 rdf:type owl:Class ;
+
+                 rdfs:label "gray matter"@en ;
+
+                 nsu:synonym "GM"@en ;
+=======
 HBA:4006 rdf:type owl:Class ;
 
                  rdfs:label "gray matter"@en ;
@@ -32,8 +46,12 @@ HBA:4006 rdf:type owl:Class ;
                  nsu:synonym "GM"@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4005 ] .
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4005 ] .
 
 
+<<<<<<< HEAD
 
 HBA:4007 rdf:type owl:Class ;
 
@@ -52,9 +70,31 @@ HBA:4008 rdf:type owl:Class ;
                  nsu:synonym "Cx"@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4007 ] .
+=======
+HBA:4007 rdf:type owl:Class ;
+
+                 rdfs:label "telencephalon"@en ;
+
+                 nsu:synonym "Tel"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4006 ] .
 
 
 
+HBA:4008 rdf:type owl:Class ;
+
+                 rdfs:label "cerebral cortex"@en ;
+
+                 nsu:synonym "Cx"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4007 ] .
+
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
+
+
+HBA:4009 rdf:type owl:Class ;
+
+<<<<<<< HEAD
 HBA:4009 rdf:type owl:Class ;
 
                  rdfs:label "frontal lobe"@en ;
@@ -62,19 +102,43 @@ HBA:4009 rdf:type owl:Class ;
                  nsu:synonym "FL"@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4008 ] .
+=======
+                 rdfs:label "frontal lobe"@en ;
+
+                 nsu:synonym "FL"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4008 ] .
+
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
 
 
+HBA:4053 rdf:type owl:Class ;
 
+<<<<<<< HEAD
 HBA:4053 rdf:type owl:Class ;
 
                  rdfs:label "anterior orbital gyrus"@en ;
 
                  nsu:synonym "AOrG"@en ;
+=======
+                 rdfs:label "anterior orbital gyrus"@en ;
+
+                 nsu:synonym "AOrG"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4009 ] .
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4009 ] .
 
 
+<<<<<<< HEAD
 
+HBA:4054 rdf:type owl:Class ;
+
+                 rdfs:label "anterior orbital gyrus, left"@en ;
+
+                 nsu:synonym "AOrG"@en ;
+=======
 HBA:4054 rdf:type owl:Class ;
 
                  rdfs:label "anterior orbital gyrus, left"@en ;
@@ -82,8 +146,12 @@ HBA:4054 rdf:type owl:Class ;
                  nsu:synonym "AOrG"@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4053 ] .
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4053 ] .
 
 
+<<<<<<< HEAD
 
 HBA:4055 rdf:type owl:Class ;
 
@@ -102,13 +170,39 @@ HBA:4078 rdf:type owl:Class ;
                  nsu:synonym "fro"@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4009 ] .
+=======
+HBA:4055 rdf:type owl:Class ;
 
+                 rdfs:label "anterior orbital gyrus, right"@en ;
+
+                 nsu:synonym "AOrG"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4053 ] .
+
+
+
+HBA:4078 rdf:type owl:Class ;
+
+                 rdfs:label "frontal operculum"@en ;
+
+                 nsu:synonym "fro"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4009 ] .
+
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
 
 
 HBA:4079 rdf:type owl:Class ;
 
+<<<<<<< HEAD
+HBA:4079 rdf:type owl:Class ;
+
                  rdfs:label "frontal operculum, left"@en ;
 
+=======
+                 rdfs:label "frontal operculum, left"@en ;
+
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
                  nsu:synonym "fro"@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4078 ] .
@@ -18396,6 +18490,7 @@ HBA:9710 rdf:type owl:Class ;
 
 
 HBA:9422 rdf:type owl:Class ;
+<<<<<<< HEAD
 
                  rdfs:label "central canal"@en ;
 
@@ -18440,8 +18535,12 @@ HBP_HBA:14003 rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4132] .
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4084 ] .
+=======
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7
 
+                 rdfs:label "central canal"@en ;
 
+<<<<<<< HEAD
 HBP_HBA:14003 rdf:type owl:Class ;
 
                  rdfs:label "Temporal insular area"@en ;
@@ -18449,3 +18548,12 @@ HBP_HBA:14003 rdf:type owl:Class ;
                  nsu:synonym ""@en ;
 
                  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:4008 ] .
+=======
+                 nsu:synonym "CC"@en ;
+
+                 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty nsu:part_of ; owl:someValuesFrom HBA:9418 ] .
+
+
+                 
+                 
+>>>>>>> 99db4e51c1ff738db5e6f2e2d7d0d404f6b9fea7

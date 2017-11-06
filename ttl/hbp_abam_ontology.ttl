@@ -9,10 +9,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix nsu: <http://www.FIXME.org/nsupper#> .
 @prefix MBA: <http://api.brain-map.org/api/v2/data/Structure/> .
+@prefix HBP_MBA: <http://www.hbp.FIXME.org/hbp_abam_ontology/> .
 @base <http://www.hbp.FIXME.org/hbp_abam_ontology> .
 
 <http://www.hbp.FIXME.org/hbp_abam_ontology> rdf:type owl:Ontology ;
-                owl:imports <http://www.FIXME.org/nsupper> .
+                owl:imports <https://raw.githubusercontent.com/NeuroscienceKnowledgeSpace/methodsOntology/master/ttl/nsupper.ttl> .
 
 
 MBA:1 rdf:type owl:Class ;
@@ -8647,7 +8648,7 @@ MBA:69 rdf:type owl:Class ;
 
 MBA:690 rdf:type owl:Class ;
 
-        rdfs:label "mammilothalmic tract"@en ;
+        rdfs:label "mammilothalamic tract"@en ;
 
         nsu:synonym "mtt"@en ;
 
