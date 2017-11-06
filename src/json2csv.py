@@ -8,7 +8,7 @@ def write_header(node, outfile):
     if node:
         line = ''
         for key in node.keys():
-            line = line + str(key) + ', '
+            line = line + str(key) + ','
         outfile.write(line + '\n')
 
 def parse_json(node, outfile, parent_node):
@@ -16,9 +16,9 @@ def parse_json(node, outfile, parent_node):
         line = ''
         for key in node.keys():
             if key != children_name:
-                line = line + str(node[key]) + ', '
+                line = line + str(node[key]) + ','
         if parent_node == None:
-            outfile.write(line + ', \n')
+            outfile.write(line + ',\n')
         else:
             outfile.write(line + str(parent_node[id_name]) + '\n')
     if children_name in node:
